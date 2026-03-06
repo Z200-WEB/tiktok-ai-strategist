@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "TikTok AI Strategist",
+    "version": "1.0.0",
+    "description": "AI-powered TikTok content strategy generator. Analyzes your analytics and generates actionable next steps using GPT-4o.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.tiktok.com/*"],
+    "action": {
+          "default_popup": "popup.html",
+          "default_title": "TikTok AI Strategist"
+    },
+    "content_scripts": [
+          {
+                  "matches": ["https://www.tiktok.com/*"],
+                  "js": ["content.js"]
+          }
+    ]
+}
