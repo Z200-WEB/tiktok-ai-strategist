@@ -1,4 +1,4 @@
-name: CI — Python Backend Tests
+name: "CI - Python Backend Tests"
 
 on:
   push:
